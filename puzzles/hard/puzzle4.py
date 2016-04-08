@@ -1,41 +1,45 @@
 # ------------------------------------ 
 # CODE BOOLA 2015 PYTHON WORKSHOP
 # Mike Wu, Jonathan Chang, Kevin Tan
-# Puzzle Challenges Number 4
-# ------------------------------------
+# Puzzle Challenges Number 3
+# ------------------------------------ 
 
-# Not going to lie, this one is almost
-# IMPOSSIBLE level. It's pretty hard.
-# I'd be so proud if you get this!
+# Alright... part 2 of the fun part.
+# Get ready!
 
-# ------------------------------------
-
+# ------------------------------------ 
 # INSTRUCTIONS: 
 
-# Have you ever heard of the power set?
-# It's the set of all subsets of a set.
-# Tongue twister, am I right?
+# We have a wacky string now and no 
+# one who looks at it knows what your
+# original string was. But let's say
+# you want to send this to your friend
+# and you want your friend to be able
+# to know what your original string was!
 
-# It's not that bad though. Think of it 
-# like this: 
+# Assuming your friend knows the key, 
+# how can we do this?
 
-# Given a set [1,2,3]
-# The power set is [[], [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3]]
-# because [1] is a subset of [1,2,3], and so is [1,2]
+# Here's a hint: instead of adding the
+# key, what if you subtracted it from 
+# the wacky string?
 
-# HINT: given a set A, the null set [], 
-#       and A itself is always in A's power set.
+# EXAMPLES:
+# decrypt('\x80q\x7f\x80', 12) => 'test'
+# decrypt('x{\x80\x7f,{r,r\x81z', 12) => 'lots of fun'
+# decrypt('xzujwmjwt', 5) => 'superhero'
 
-# Write a function that takes a parameter lst 
-# and returns the powerset.
-
-# EXAMPLES: 
-
-# power_set([]) => [[]]
-# power_set([1]) => [[], [1]]
-# power_set([1,2]) => [[], [2], [1], [1,2]]
-# power_set([1,2,3]) => [[], [3], [2], [2, 3], [1], [1, 3], [1, 2], [1, 2, 3]]
-# power_set([1,2,3,4]) => # [[],[4],[3],[3,4],[2],[2,4],[2,3],[2,3,4],[1],[1,4],[1,3],[1,3,4], [1,2],[1,2,4],[1,2,3],[1,2,3,4]]
-
-def powerset(lst):
+def decrypt(w, key):
   pass
+
+# Now you have a full ENCRYPTION 
+# system. Be careful though... what
+# we just made was simple but it 
+# is CRACKABLE! That means people 
+# can still find out what your message
+# was without the secret key. 
+
+# For the most part though, you can
+# now pass secret messages to anyone
+# who knows the secret key.
+

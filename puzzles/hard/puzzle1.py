@@ -15,32 +15,27 @@
 #  (__ __)//
 
 # ------------------------------------ 
+# INSTRUCTIONS: 
 
-# Let's start out a little friendlier.
-# You know what a palindrome is? 
-# It's when the word spelled forwards
-# is the same as the word spelled backwards.
+# Here we are going to play with some
+# numbers! This is a pretty famous 
+# computer science problem called
+# FizzBuzz.
 
-# For example ==> racecar.
+# Write a program that prints the integers
+# from 1 to an argument n. But for multiples 
+# of three print "Fizz" instead of the number, 
+# and for the multiples of five print "Buzz". 
+# For numbers which are multiples of both 
+# three and five print "FizzBuzz".
 
-# Can you write something to test if a 
-# word is a palindrome or not?
+# EXAMPLE:
+# fizzbuzz(5):
+# 1
+# 2
+# Fizz
+# 4
+# Buzz
 
-# Another thing: remove all spaces in the 
-# string before doing thing. 
-
-# Don't know how? Check out the str.replace
-# function. Google it!
-
-# s = "asd"
-# s.replace("a", "b") => "bsd"
-
-# EXAMPLES: 
-# palindrome("racecar") => True
-# palindrome("sample") => False
-# palindrome("do geese see god") ==> True
-
-def palindrome(s):
+def fizzbuzz(n):
   pass
-
-  

@@ -25,9 +25,6 @@
 # all_samep([1, 1.0, 1]) => False
 # all_samep(['a', 'a', 'a', 'a' ]) => True
 # all_samep(['a', 'A', 'a', 'a' ]) => False
-# all_samep([[1], [1], [1], [1]]) => True
-#             ^ Watch out for this one! Remember.. 
-#               Lists can hold other lists inside it!
 
 def all_samep(lst):
   pass

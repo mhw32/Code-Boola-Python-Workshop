@@ -1,43 +1,47 @@
 # ------------------------------------ 
 # CODE BOOLA 2015 PYTHON WORKSHOP
 # Mike Wu, Jonathan Chang, Kevin Tan
-# Puzzle Challenges Number 3
+# Puzzle Challenges Number 2
 # ------------------------------------ 
 
-# Alright... part 2 of the fun part.
-# Get ready!
+# Ready for something fun? In this 
+# problem and the next problem, we 
+# are going to make an ENCRYPTION
+# and DECRYPTION algorithm. Remember
+# the demo I showed you? You'll be 
+# able to do that. Wow.
 
 # ------------------------------------ 
 # INSTRUCTIONS: 
 
-# We have a wacky string now and no 
-# one who looks at it knows what your
-# original string was. But let's say
-# you want to send this to your friend
-# and you want your friend to be able
-# to know what your original string was!
+# We are making what is called a cipher.
+# Remember in puzzle 10 in the easy folder, 
+# we learned about chr() and ord()?
 
-# Assuming your friend knows the key, 
-# how can we do this?
+# Well... using those, we can make a 
+# cool secret message creation system.
 
-# Here's a hint: instead of adding the
-# key, what if you subtracted it from 
-# the wacky string?
+# Here's the plan:
+# Given any string, we can get it
+# into a list of characters. We can
+# also convert each character into 
+# an integer. 
+
+# Let's say we have a variable KEY. 
+# KEY is just some integer and it 
+# represents your SECRET key.  
+
+# Let's add KEY to each integer from
+# the string. Then let's convert the
+# string back into characters. 
+
+# Now we have some wacky looking string!
+# PERFECT!
 
 # EXAMPLES:
-# 
+# encrypt('test', 12) => '\x80q\x7f\x80'
+# encrypt('lots of fun', 12) => 'x{\x80\x7f,{r,r\x81z'
+# encrypt('superhero', 5) => 'xzujwmjwt'
 
-def decrypt(w, key):
+def encrypt(s, key):
   pass
-
-# Now you have a full ENCRYPTION 
-# system. Be careful though... what
-# we just made was simple but it 
-# is CRACKABLE! That means people 
-# can still find out what your message
-# was without the secret key. 
-
-# For the most part though, you can
-# now pass secret messages to anyone
-# who knows the secret key.
-
