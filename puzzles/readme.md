@@ -9,6 +9,13 @@ Don't worry if you get stuck -- I know we went over a lot of material fast, so j
 
 There are 10 easy problems, 6 medium problems, 3 hard problems, and 1 impossible problem. Really. Don't start with the impossible one. 
 
+### The points
+
+Easy problems are worth 1 point. 
+Medium problems are worth 2 points.
+Hard problems are worth 3 points.
+The impossible problem is worth 5 points.
+
 ### Checking your solutions
 
 How do you check if you are right? Run the verify function from the boola_puzzles folder. 
