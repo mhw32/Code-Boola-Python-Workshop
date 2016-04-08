@@ -28,17 +28,17 @@
 
 # EXAMPLES
 # d = dictionarify(['a', 'b', 'c'], [1, 2, 3])
-# d['a'] ==> should be 1
-# d['b'] ==> should be 2
-# d['c'] ==> should be 3
+# d['a'] => should be 1
+# d['b'] => should be 2
+# d['c'] => should be 3
 
 # d = dictionarify(['a', 'b', 'c', 'a'], [1, 2, 3, 4])
-# d['a'] ==> should be 4
-# d['b'] ==> should be 2
-# d['c'] ==> should be 3
+# d['a'] => should be 4
+# d['b'] => should be 2
+# d['c'] => should be 3
 
 # d = dictionarify(['a' ,'b'], [1])
-# d ==> should be {}
+# d => should be {}
 
 def dictionarify(lstA, lstB):
   pass
