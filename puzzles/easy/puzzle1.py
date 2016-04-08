@@ -34,7 +34,7 @@
 # upcoming presidential election.
 
 def president():
-  ... # <-- This means, delete me and replace me with code!
+  pass # <-- This means, delete me and replace me with code!
 
 # EXAMPLES: (yours WILL be different)
 # president() => "George Washington"

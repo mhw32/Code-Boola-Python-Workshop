@@ -26,7 +26,6 @@
 # sum_digits(123456789) => 45
 # sum_digits(9) => 9
 
-def sum_digits(...):
-  ...
+def sum_digits(n):
+  pass
 
-  

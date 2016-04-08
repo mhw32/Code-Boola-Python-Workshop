@@ -26,6 +26,6 @@
 # hypotenuse(5,12) => 13
 # hypotenuse(1,1)  => 1.4142135623730951
 
-def hypotenuse(...):
-  ... 
+def hypotenuse(x, y):
+  pass
 
