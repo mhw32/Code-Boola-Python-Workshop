@@ -47,7 +47,7 @@ def savefigure():
   y = r * np.cos(theta)
   ax.plot(x, y, z, label='parametric curve')
   ax.legend()
-  ... # Fill this out!
+  # <DO SOMETHING HERE> Fill this out!
 
 # Take a look at your saved figure! 
 # It should now be in the medium folder!
