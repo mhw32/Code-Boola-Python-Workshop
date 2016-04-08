@@ -4,28 +4,28 @@
 # Puzzle Challenges Number 3
 # ------------------------------------ 
 
-# You should check that you are getting
-# some points with the verify script
-# before you keep going!
+# Alright, you almost there. 
+# Things might get a little harder :)
+# Not too much though.
 
 # ------------------------------------ 
 # INSTRUCTIONS: 
 
-# I'm a sad PhD student and I really need
-# to use computer science to help me 
-# with my math calculations. Will you 
-# help me?
+# Let's continue with lists. They are 
+# pretty darn important! Remember 
+# FOR loops are your friends. 
 
-# Write a function that takes a positive 
-# integer as an argument and returns 
-# the sum of the digits.
+# Write the function
+# every_nth(lst, n)
+# every_nth takes a list lst and returns a new list comprising
+# every nth element of the original list.
 
-# EXAMPLE:
-# sum_digits(13) => 4
-# sum_digits(1000000) => 1
-# sum_digits(123456789) => 45
-# sum_digits(9) => 9
+# EXAMPLES
 
-def sum_digits(n):
+# every_nth([1,2,3,4,5,6], 2) => [2 4 6]
+# every_nth([1,2,3,4,5,6], 5) => [5]
+# every_nth([1,2,3,4], 5) => []
+# every_nth([1,2,3,4,5], 1) => [1,2,3,4,5]
+
+def every_nth(lst):
   pass
-

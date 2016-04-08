@@ -33,8 +33,13 @@
 # your preferred winner of the 
 # upcoming presidential election.
 
+# EXAMPLES: (yours WILL be different)
+# president() => "George Washington"
+
+# HINT: 
+# Don't forget to use quotations marks 
+# around your strings!
+
 def president():
   pass # <-- This means, delete me and replace me with code!
 
-# EXAMPLES: (yours WILL be different)
-# president() => "George Washington"

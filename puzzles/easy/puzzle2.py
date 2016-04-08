@@ -26,6 +26,10 @@
 # hypotenuse(5,12) => 13
 # hypotenuse(1,1)  => 1.4142135623730951
 
+# HINT: 
+# To do exponents, use **
+# For example, 2**3 is 8.
+
 def hypotenuse(x, y):
   pass
 
