@@ -13,7 +13,7 @@ There are 10 easy problems, 6 medium problems, 3 hard problems, and 1 impossible
 
 How do you check if you are right? Run the verify function from the boola_puzzles folder. 
 
-	cd ~/code-boola/boola_puzzles
+	cd ~/code-boola/puzzles
 	python verify.py
 	
 This will give you a log as it checks each of your scripts in each of the folders! It'll tally up the scores and give you a final summary of your progress! Have fun and try your best! We'll be around to help with whatever you need. 
