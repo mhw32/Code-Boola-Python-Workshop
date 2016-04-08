@@ -21,3 +21,6 @@
 
 # ------------------------------------ 
 # INSTRUCTIONS:
+
+def impossible():
+  pass
