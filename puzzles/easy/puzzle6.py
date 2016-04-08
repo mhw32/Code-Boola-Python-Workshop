@@ -20,11 +20,11 @@
 
 # EXAMPLES
 
-# all_differentp([1,1,1,1,1]),False)
-# all_differentp([1,2,3,4,5]),True)
-# all_differentp([1,1,1,1,2,1]),False)
-# all_differentp([[],[],[],[]]),False)
-# all_differentp([[1],[2],[3],[4]]),True)
+# all_differentp([1,1,1,1,1]) => False
+# all_differentp([1,2,3,4,5]) => True
+# all_differentp([1,1,1,1,2,1]) => False
+# all_differentp([[],[],[],[]]) => False
+# all_differentp([[1],[2],[3],[4]]) => True
 
 def all_differentp(lst):
   pass
