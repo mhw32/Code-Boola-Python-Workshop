@@ -1,53 +1,40 @@
 # ------------------------------------ 
 # CODE BOOLA 2015 PYTHON WORKSHOP
 # Mike Wu, Jonathan Chang, Kevin Tan
-# Puzzle Challenges Number 3
+# Puzzle Challenges Number 4
 # ------------------------------------ 
 
-# Let's do something with cool math
-# figures and plots. This will be 
-# super cool. I promise. 
+# Wow! You are doing this way faster 
+# than I thought you would. Slooooow
+# doooowwwwwnnn...
 
 # ------------------------------------ 
 # INSTRUCTIONS: 
 
-# I'm interested in the shape of a
-# parametric curve. I know the formula, 
-# but I just can't seem to understand 
-# what it looks like! I've set up more 
-# of the code already, but I need some 
-# help saving the plot. 
+# I almost forgot about working with 
+# strings. Can't forget that!
 
-# Write a function that takes in no 
-# arguments and saves the plot to 
-# the following pathname: './test.png'.
+# Write a function that takes a single
+# *string* argument and returns the
+# reverse of the string.
 
-# We've imported the matplotlib library
-# which is super popular for plotting 
-# graphs. 
+# Using a FOR loop is optional.
 
-# HINT: One of the functions in the 
-# library is savefig(pathname). Use it:
-# 
-#   plt.savefig(pathname)
+# EXAMPLE:
+# reverse("blah") => "halb"
+# reverse("test") => "tset"
+# reverse("racecar") => "racecar"
 
-import matplotlib as mpl
-from mpl_toolkits.mplot3d import Axes3D
-import numpy as np
-import matplotlib.pyplot as plt
-mpl.rcParams['legend.fontsize'] = 10
+# HINT:
+# You probably want to index through a 
+# string. Remember s[0] is the first
+# index of the string and s[len(s)-1] 
+# is the last index of string.
 
-def savefigure():
-  fig = plt.figure()
-  ax = fig.gca(projection='3d')
-  theta = np.linspace(-4 * np.pi, 4 * np.pi, 100)
-  z = np.linspace(-2, 2, 100)
-  r = z**2 + 1
-  x = r * np.sin(theta)
-  y = r * np.cos(theta)
-  ax.plot(x, y, z, label='parametric curve')
-  ax.legend()
-  # <DO SOMETHING HERE>
+# The sequence is:
+# s[0], s[1], ..., s[len(s)-2], s[len(s)-1]
 
-# Take a look at your saved figure! 
-# It should now be in the medium folder!
+# How do you flip this with a for loop?
+
+def reverse(s):
+  pass

@@ -1,40 +1,48 @@
 # ------------------------------------ 
 # CODE BOOLA 2015 PYTHON WORKSHOP
 # Mike Wu, Jonathan Chang, Kevin Tan
-# Puzzle Challenges Number 4
+# Puzzle Challenges Number 5
 # ------------------------------------ 
 
-# Wow! You are doing this way faster 
-# than I thought you would. Slooooow
-# doooowwwwwnnn...
+# Last one of the group! 
+# You a deserve a break after this one.
 
 # ------------------------------------ 
 # INSTRUCTIONS: 
 
-# I almost forgot about working with 
-# strings. Can't forget that!
+# Let's keep working with strings
+# a little bit. You can actually convert
+# from strings to numbers and back!
 
-# Write a function that takes a single
-# *string* argument and returns the
-# reverse of the string.
+# Check out these built-in Python functions.
+# Try them out in the Python interactive terminal!
 
-# Using a FOR loop is optional.
+# chr(...) => takes a number and converts
+#              it into a letter.
+# chr(97) => 'a'               
+# chr(98) => 'b'
+# chr(99) => 'c'
 
-# EXAMPLE:
-# reverse("blah") => "halb"
-# reverse("test") => "tset"
-# reverse("racecar") => "racecar"
+# ord(...) => takes a letter and converts 
+#              it into a number.
+# ord('a') => 97
+# ord('b') => 98
+# ord('c') => 99
 
-# HINT:
-# You probably want to index through a 
-# string. Remember s[0] is the first
-# index of the string and s[len(s)-1] 
-# is the last index of string.
+# Now using these...
+# Write a function that takes a *string*
+# argument and converts each character 
+# into a number and sums all the "numbers"
+# in the string. 
 
-# The sequence is:
-# s[0], s[1], ..., s[len(s)-2], s[len(s)-1]
+# For example, "cat" => ["c", "a", "t"], 
+# which is [99, 97, 116] => 312
 
-# How do you flip this with a for loop?
+# EXAMPLES:
+# convert("cat") => 312
+# convert("dog") => 314
+# convert("boola") => 525
 
-def reverse(s):
+def convert(s):
   pass
+  

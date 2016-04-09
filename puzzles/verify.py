@@ -14,10 +14,9 @@ from puzzle10e import listify
 sys.path.append('./medium')
 from puzzle1m import largest_digit
 from puzzle2m import sum_digits
-from puzzle3m import savefigure
-from puzzle4m import reverse
-from puzzle5m import convert
-from puzzle6m import dictionarify
+from puzzle3m import reverse
+from puzzle4m import convert
+from puzzle5m import dictionarify
 
 sys.path.append('./hard')
 from puzzle1h import fizzbuzz
@@ -31,12 +30,12 @@ sys.path.append('./impossible')
 # --------------------------
 
 easy_pts   = np.zeros(10)
-medium_pts = np.zeros(6)
+medium_pts = np.zeros(5)
 hard_pts   = np.zeros(4)
 impos_pts  = np.zeros(1)
 
 total_easy_pts   = [1, 4, 4, 3, 2, 5, 4, 3, 5, 3]
-total_medium_pts = [4, 5, 1, 5, 5, 9]
+total_medium_pts = [4, 5, 5, 5, 9]
 total_hard_pts   = [6, 5, 4, 4]
 total_impos_pts  = [0]
 
@@ -112,37 +111,34 @@ medium_pts[1] += test(sum_digits(1000000),1)
 medium_pts[1] += test(sum_digits(123456789), 45)
 medium_pts[1] += test(sum_digits(9),9)
 
-if os.path.exists('./medium/test.png'):
-  medium_pts[2] += 1
+medium_pts[2] += test(reverse("blah"), "halb")
+medium_pts[2] += test(reverse("tset"), "test")
+medium_pts[2] += test(reverse("racecar"), "racecar")
+medium_pts[2] += test(reverse("12367"), "76321")
+medium_pts[2] += test(reverse(""), "")
 
-medium_pts[3] += test(reverse("blah"), "halb")
-medium_pts[3] += test(reverse("tset"), "test")
-medium_pts[3] += test(reverse("racecar"), "racecar")
-medium_pts[3] += test(reverse("12367"), "76321")
-medium_pts[3] += test(reverse(""), "")
-
-medium_pts[4] += test(convert("cat"), 312)
-medium_pts[4] += test(convert("dog"), 314)
-medium_pts[4] += test(convert("boola"), 525)
-medium_pts[4] += test(convert("1467"), 210)
-medium_pts[4] += test(convert(""), 0)
+medium_pts[3] += test(convert("cat"), 312)
+medium_pts[3] += test(convert("dog"), 314)
+medium_pts[3] += test(convert("boola"), 525)
+medium_pts[3] += test(convert("1467"), 210)
+medium_pts[3] += test(convert(""), 0)
 
 d1 = dictionarify(['a', 'b', 'c'], [1, 2, 3])
 d2 = dictionarify(['a', 'b', 'c', 'a'], [1, 2, 3, 4])
 d3 = dictionarify(['a' ,'b'], [1])
 
 if not d1 is None:
-  medium_pts[5] += test(d1['a'], 1)
-  medium_pts[5] += test(d1['b'], 2)
-  medium_pts[5] += test(d1['c'], 3)
-  medium_pts[5] += test(len(d1), 3)
+  medium_pts[4] += test(d1['a'], 1)
+  medium_pts[4] += test(d1['b'], 2)
+  medium_pts[4] += test(d1['c'], 3)
+  medium_pts[4] += test(len(d1), 3)
 if not d2 is None:
-  medium_pts[5] += test(d2['a'], 4)
-  medium_pts[5] += test(d2['b'], 2)
-  medium_pts[5] += test(d2['c'], 3)
-  medium_pts[5] += test(len(d2), 3)
+  medium_pts[4] += test(d2['a'], 4)
+  medium_pts[4] += test(d2['b'], 2)
+  medium_pts[4] += test(d2['c'], 3)
+  medium_pts[4] += test(len(d2), 3)
 if not d3 is None:
-  medium_pts[5] += test(d3, {})
+  medium_pts[4] += test(d3, {})
 
 # ------------- Hard problem grading. -------------
 hard_pts[0] += test(fizzbuzz(3), [1, 2, 'Fizz'])
