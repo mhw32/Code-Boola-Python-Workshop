@@ -44,4 +44,4 @@
 # encrypt('superhero', 5) => 'xzujwmjwt'
 
 def encrypt(s, key):
-  pass
+    pass

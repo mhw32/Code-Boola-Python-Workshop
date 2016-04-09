@@ -40,5 +40,5 @@
 # find the maximum element in the lst.
 
 def sum_digits(n):
-  pass
+    pass
 

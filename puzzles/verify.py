@@ -56,10 +56,10 @@ easy_pts[1] += test(hypotenuse(5,12), 13)
 easy_pts[1] += test(hypotenuse(6,8), 10)
 easy_pts[1] += test(hypotenuse(1,1), 1.4142135623730951)
 
-easy_pts[2] += test(loops(5), [0, 1, 2, 3, 4]
-easy_pts[2] += test(loops(1), [0]
-easy_pts[2] += test(loops(0), []
-easy_pts[2] += test(loops(10), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+easy_pts[2] += test(loops(5), [0, 1, 2, 3, 4])
+easy_pts[2] += test(loops(1), [0])
+easy_pts[2] += test(loops(0), [])
+easy_pts[2] += test(loops(10), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 easy_pts[3] += test(detect(12), True)
 easy_pts[3] += test(detect(9), False)

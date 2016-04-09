@@ -23,4 +23,4 @@
 # Use 'if' and 'else' in the function
 
 def detect(num):
-  pass
+    pass

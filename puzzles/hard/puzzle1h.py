@@ -35,4 +35,4 @@
 # fizzbuzz(1) => [1]
 
 def fizzbuzz(n):
-  pass
+    pass

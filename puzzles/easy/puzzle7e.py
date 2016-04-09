@@ -17,4 +17,4 @@
 # reverse_lst([1, 1, 1, 2, 1, 1]) => [1, 1, 2, 1, 1, 1]
 
 def reverse_lst(lst):
-  pass # 1 line
+    pass # 1 line

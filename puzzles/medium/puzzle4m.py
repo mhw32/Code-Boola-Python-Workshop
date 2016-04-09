@@ -44,5 +44,5 @@
 # convert("boola") => 525
 
 def convert(s):
-  pass
+    pass
   

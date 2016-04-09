@@ -23,4 +23,4 @@
 # a with b in string x.
 
 def clean(s):
-  pass
+    pass

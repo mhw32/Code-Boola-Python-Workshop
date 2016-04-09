@@ -35,6 +35,6 @@
 # palindrome("do geese see god") ==> True
 
 def palindrome(s):
-  pass
+    pass
 
   

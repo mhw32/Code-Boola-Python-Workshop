@@ -30,7 +30,7 @@
 # decrypt('xzujwmjwt', 5) => 'superhero'
 
 def decrypt(w, key):
-  pass
+    pass
 
 # Now you have a full ENCRYPTION 
 # system. Be careful though... what
