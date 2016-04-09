@@ -1,48 +1,84 @@
 # ------------------------------------ 
 # CODE BOOLA 2015 PYTHON WORKSHOP
 # Mike Wu, Jonathan Chang, Kevin Tan
-# Puzzle Challenges Number 5
+# Puzzle Challenges Number 6
 # ------------------------------------ 
 
-# Last one of the group! 
-# You a deserve a break after this one.
+#                   /88888888888888888888888888\
+#                   |88888888888888888888888888/
+#                    |~~____~~~~~~~~~"""""""""|
+#                   / \_________/"""""""""""""\
+#                  /  |              \         \
+#                 /   |  88    88     \         \
+#                /    |  88    88      \         \
+#               /    /                  \        |
+#              /     |   ________        \       |
+#              \     |   \______/        /       |
+#   /"\         \     \____________     /        |
+#   | |__________\_        |  |        /        /
+# /""""\           \_------'  '-------/       --
+# \____/,___________\                 -------/
+# ------*            |                    \
+#   ||               |                     \
+#   ||               |                 ^    \
+#   ||               |                | \    \
+#   ||               |                |  \    \
+#   ||               |                |   \    \
+#   \|              /                /"""\/    /
+#      -------------                |    |    /
+#      |\--_                        \____/___/
+#      |   |\-_                       |
+#      |   |   \_                     |
+#      |   |     \                    |
+#      |   |      \_                  |
+#      |   |        ----___           |
+#      |   |               \----------|
+#      /   |                     |     ----------""\
+# /"\--"--_|                     |               |  \
+# |_______/                      \______________/    )
+#                                               \___/
 
 # ------------------------------------ 
 # INSTRUCTIONS: 
 
-# Let's keep working with strings
-# a little bit. You can actually convert
-# from strings to numbers and back!
+# Let's work with some dictionaries. 
+# A common situation with dictionaries
+# is that I have two lists, lstA and 
+# lstB, and I want to every element
+# of lstA to the corresponding element 
+# in lstB. 
 
-# Check out these built-in Python functions.
-# Try them out in the Python interactive terminal!
+# Write a function that takes as arguments
+# two lists, lstA & lstB, and returns a 
+# dictionary that maps the 0th element of 
+# lstA to the 0th element of lstB, the 1st
+# element of lstA to the 1st element of lstB, 
+# etc. 
 
-# chr(...) => takes a number and converts
-#              it into a letter.
-# chr(97) => 'a'               
-# chr(98) => 'b'
-# chr(99) => 'c'
-
-# ord(...) => takes a letter and converts 
-#              it into a number.
-# ord('a') => 97
-# ord('b') => 98
-# ord('c') => 99
-
-# Now using these...
-# Write a function that takes a *string*
-# argument and converts each character 
-# into a number and sums all the "numbers"
-# in the string. 
-
-# For example, "cat" => ["c", "a", "t"], 
-# which is [99, 97, 116] => 312
+# If the two lists are not the same length, 
+# return an empty dictionary.
 
 # EXAMPLES:
-# convert("cat") => 312
-# convert("dog") => 314
-# convert("boola") => 525
+# d = dictionarify(['a', 'b', 'c'], [1, 2, 3])
+# d['a'] => should be 1
+# d['b'] => should be 2
+# d['c'] => should be 3
 
-def convert(s):
+# d = dictionarify(['a', 'b', 'c', 'a'], [1, 2, 3, 4])
+# d['a'] => should be 4
+# d['b'] => should be 2
+# d['c'] => should be 3
+
+# d = dictionarify(['a' ,'b'], [1])
+# d => should be {}
+
+# HINT:
+# A FOR loop is probably useful here, right?
+# Remember, you have to initialize a dictionary 
+# by doing d = {}.
+
+# You can set a dictionary value by doing
+# d[key] = value for some key and value variables.
+
+def dictionarify(lstA, lstB):
   pass
-  
