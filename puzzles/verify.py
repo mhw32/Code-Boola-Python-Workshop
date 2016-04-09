@@ -26,7 +26,7 @@ from puzzle3h import encrypt
 from puzzle4h import decrypt
 
 sys.path.append('./impossible')
-from puzzle1i import impossible
+# from puzzle1i import impossible
 
 # --------------------------
 
