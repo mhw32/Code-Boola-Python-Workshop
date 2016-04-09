@@ -38,4 +38,3 @@ import math
 
 def hypotenuse(x, y):
     pass
-

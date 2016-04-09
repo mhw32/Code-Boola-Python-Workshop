@@ -42,4 +42,3 @@
 
 def president():
     pass # <-- This means, delete me and replace me with code!
-

@@ -10,21 +10,22 @@
 # INSTRUCTIONS:
 
 # Write a function createList()
-# that takes in six inputs. These
-# inputs can be a mix of both 
-# numbers and strings. These inputs
-# are all up to you - you decide 
-# what they are. The function will
-# then take these inputs and put them
-# into a list. Then the function will
-# return the list.
+# that takes in two argument. The 
+# first argument is a list and the second
+# argument is a variable. We want to add
+# the variable to the end of the list!
+# Return the list after you've appended
+# the variable
 
 # EXAMPLES: 
-# createList('hi', 34, 0, '64', 'five', 100) => ['hi', 34, 0, '64', 'five', 100]
+# createList(['hi', 34, 0, '64', 'five'], 100) => ['hi', 34, 0, '64', 'five', 100]
 
 # HINT: 
 # Don't forget to use quotations marks 
-# around your strings!
+# around your strings! 
 
-def createList(inp1, inp2, inp3, inp4, inp5, inp6):
+# if lst is a list, to append a variable x
+# to lst, do lst.append(x)
+
+def createList(lst, x):
     pass

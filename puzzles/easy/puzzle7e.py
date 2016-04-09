@@ -16,5 +16,11 @@
 # reverse_lst([1]) => [1]
 # reverse_lst([1, 1, 1, 2, 1, 1]) => [1, 1, 2, 1, 1, 1]
 
+# HINT:
+# lists have a reverse function!
+# If lst is a list, then lst.reverse() should 
+# do the trick! 
+
 def reverse_lst(lst):
     pass # 1 line
+    return lst # Don't remove this! You want to return the lst.
