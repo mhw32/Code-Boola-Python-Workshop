@@ -4,24 +4,17 @@
 # Puzzle Challenges Number 7
 # ------------------------------------ 
 
-# Hey! Welcome to our little puzzle games. 
-
-# ------------------------------------ 
 # INSTRUCTIONS:
 
-# We are all wondering who is going to 
-# be president next year! Maybe code will
-# tell us!
+# Using only 1 line, write a function 
+# to reverse a list. The function is 
+# passed a list as an argument.
 
-# Write a function president()
-# that takes no arguments and
-# returns a *string* indicating
-# your preferred winner of the 
-# upcoming presidential election.
+# EXAMPLE:
+# reverse_lst([1, 2, 3]) => [3, 2, 1]
+# reverse_lst([]) => []
+# reverse_lst([1]) => [1]
+# reverse_lst([1, 1, 1, 2, 1, 1]) => [1, 1, 2, 1, 1, 1]
 
-# EXAMPLES: (yours WILL be different)
-# president() => "George Washington"
-
-# HINT: 
-# Don't forget to use quotations marks 
-# around your strings!
+def reverse_lst(lst):
+  pass # 1 line

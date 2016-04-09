@@ -4,24 +4,27 @@
 # Puzzle Challenges Number 6
 # ------------------------------------ 
 
-# Hey! Welcome to our little puzzle games. 
+# Let's go back to the basics. 
 
 # ------------------------------------ 
 # INSTRUCTIONS:
 
-# We are all wondering who is going to 
-# be president next year! Maybe code will
-# tell us!
+# Write a function that takes a single
+# input to calculate its factorial. 
 
-# Write a function president()
-# that takes no arguments and
-# returns a *string* indicating
-# your preferred winner of the 
-# upcoming presidential election.
+# Remember that the factorial of 0
+# is 1! And any factorial of a negative 
+# number should return None.
 
-# EXAMPLES: (yours WILL be different)
-# president() => "George Washington"
+# EXAMPLE:
+# factorial(1) => 1
+# factorial(10) => 3628800
+# factorial(-1) => None
+# factorial(0) => 1
+# factorial(4) => 24
 
-# HINT: 
-# Don't forget to use quotations marks 
-# around your strings!
+# HINT:
+# The easiest way is to use a for loop!
+
+def factorial(n):
+  pass
