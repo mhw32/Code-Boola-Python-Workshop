@@ -12,10 +12,12 @@
 # Write a function detect()
 # that will tell you whether the 
 # number that you input is greater
-# than 10.
+# than 10. The function should return
+# True or False.
 
 # EXAMPLES: 
-# detect(12) => YES
+# detect(12) => True
+# detect(9) => False
 
 # HINT: 
 # Use 'if' and 'else' in the function

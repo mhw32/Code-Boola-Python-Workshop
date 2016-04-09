@@ -30,6 +30,12 @@
 # To do exponents, use **
 # For example, 2**3 is 8.
 
+# You might need to do a square root function.
+#   To do that, we'll use the python library math.
+#   math.sqrt(2) finds the square root of 2.
+
+import math
+
 def hypotenuse(x, y):
   pass
 

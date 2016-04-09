@@ -15,17 +15,20 @@
 # pretty darn important! Remember 
 # FOR loops are your friends. 
 
-# Write the function
-# every_nth(lst, n)
-# every_nth takes a list lst and returns a new list comprising
-# every nth element of the original list.
+# Write the function that takes in an
+# integer argument and returns a list 
+# with all the integers from 0 to that
+# argument - 1. 
+
+# For example, loops(5) should return
+# [0, 1, 2, 3, 4]
 
 # EXAMPLES
 
-# every_nth([1,2,3,4,5,6], 2) => [2 4 6]
-# every_nth([1,2,3,4,5,6], 5) => [5]
-# every_nth([1,2,3,4], 5) => []
-# every_nth([1,2,3,4,5], 1) => [1,2,3,4,5]
+# loops(5) => [0, 1, 2, 3, 4]
+# loops(1) => [0]
+# loops(0) => []
+# loops(10) => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-def every_nth(lst, n):
+def loops(n):
   pass
