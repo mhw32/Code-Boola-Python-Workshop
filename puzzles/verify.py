@@ -3,6 +3,13 @@ sys.path.append('./easy')
 from puzzle1e import president
 from puzzle2e import hypotenuse
 from puzzle3e import every_nth
+from puzzle4e import detect
+from puzzle5e import createList
+from puzzle6e import factorial
+from puzzle7e import reverse_lst
+from puzzle8e import select
+from puzzle9e import clean
+from puzzle10e import listify
 
 sys.path.append('./medium')
 from puzzle1m import largest_digit
@@ -21,12 +28,14 @@ from puzzle4h import decrypt
 sys.path.append('./impossible')
 from puzzle1i import impossible
 
+# --------------------------
+
 easy_pts   = np.zeros(10)
 medium_pts = np.zeros(6)
 hard_pts   = np.zeros(4)
 impos_pts  = np.zeros(1)
 
-total_easy_pts   = [1, 4, 4, 0, 0, 0, 0, 0, 0, 0]
+total_easy_pts   = [1, 4, 4, 3, 2, 5, 4, 3, 5, 3]
 total_medium_pts = [4, 5, 1, 5, 5, 9]
 total_hard_pts   = [6, 5, 4, 4]
 total_impos_pts  = [0]
@@ -43,7 +52,7 @@ def test(got, expected):
   except:
     return False
 
-# Easy problem grading.
+#  ------------- Easy problem grading. -------------
 easy_pts[0] += test(president(), lambda s: type(s) == type(''))
 
 easy_pts[1] += test(hypotenuse(3,4), 5)
@@ -56,7 +65,42 @@ easy_pts[2] += test(every_nth([1,2,3,4,5,6], 5), [5])
 easy_pts[2] += test(every_nth([1,2,3,4], 5), [])
 easy_pts[2] += test(every_nth([1,2,3,4,5], 1), [1,2,3,4,5])
 
-# Medium problem grading.
+easy_pts[3] += test(detect(12), True)
+easy_pts[3] += test(detect(9), False)
+easy_pts[3] += test(detect(10), False)
+
+easy_pts[4] += test(createList('hi', 34, 0, '64', 'five', 100), ['hi', 34, 0, '64', 'five', 100])
+easy_pts[4] += test(createList(None, 1, '2', 'lkj', 41, True), [None, 1, '2', 'lkj', 41, True])
+
+easy_pts[5] += test(factorial(1), 1)
+easy_pts[5] += test(factorial(10), 3628800)
+easy_pts[5] += test(factorial(-1), None)
+easy_pts[5] += test(factorial(0), 1)
+easy_pts[5] += test(factorial(4), 24)
+
+easy_pts[6] += test(reverse_lst([1, 2, 3]), [3, 2, 1])
+easy_pts[6] += test(reverse_lst([]), [])
+easy_pts[6] += test(reverse_lst([1]), [1])
+easy_pts[6] += test(reverse_lst([1, 1, 1, 2, 1, 1]), [1, 1, 2, 1, 1, 1])
+
+easy_pts[7] += test(select(12345), "1")
+easy_pts[7] += test(select(519), "5")
+easy_pts[7] += test(select(2), "2")
+
+easy_pts[8] += test(clean("hi this is mike"), "hithisismike")
+easy_pts[8] += test(clean(""), "")
+easy_pts[8] += test(clean(" "), "")
+easy_pts[8] += test(clean("omg      spaces"), "omgspaces")
+easy_pts[8] += test(clean("freebie"), "freebie")
+
+t1 = {'a':1, 'b':2, 'c':3}
+t2 = {}
+t3 = {'a':1235}
+easy_pts[9] += test(listify(t1), ['a', 'b', 'c'])
+easy_pts[9] += test(listify(t2), [])
+easy_pts[9] += test(listify(t3), ['a'])
+
+# ------------- Medium problem grading. -------------
 medium_pts[0] += test(largest_digit(12345),5)
 medium_pts[0] += test(largest_digit(11111),1)
 medium_pts[0] += test(largest_digit(54321),5)
@@ -100,7 +144,7 @@ if not d2 is None:
 if not d3 is None:
   medium_pts[5] += test(d3, {})
 
-# Hard problem grading.
+# ------------- Hard problem grading. -------------
 hard_pts[0] += test(fizzbuzz(3), [1, 2, 'Fizz'])
 hard_pts[0] += test(fizzbuzz(5), [1, 2, 'Fizz', 4, 'Buzz'])
 hard_pts[0] += test(fizzbuzz(0), [])
@@ -125,7 +169,7 @@ hard_pts[3] += test(decrypt('x{\x80\x7f,{r,r\x81z', 12), 'lots of fun')
 hard_pts[3] += test(decrypt('xzujwmjwt', 5), 'superhero')
 hard_pts[3] += test(decrypt('', 124), '')
 
-# Impossible problem grading.
+# ------------- Impossible problem grading. -------------
 
 print '====================================='
 print '||   CODE BOOLA PUZZLE CHALLENGE   ||'
