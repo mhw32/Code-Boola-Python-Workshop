@@ -21,6 +21,7 @@
 
 # Another thing: remove all spaces in the 
 # string before doing thing. 
+# Also: empty string is not a palindrome.
 
 # Don't know how? Check out the str.replace
 # function. Google it!

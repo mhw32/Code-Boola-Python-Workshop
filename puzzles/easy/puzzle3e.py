@@ -27,5 +27,5 @@
 # every_nth([1,2,3,4], 5) => []
 # every_nth([1,2,3,4,5], 1) => [1,2,3,4,5]
 
-def every_nth(lst):
+def every_nth(lst, n):
   pass

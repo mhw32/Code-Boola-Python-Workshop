@@ -38,7 +38,7 @@
 # if n is your number:
 #   list(str(n)) would do the trick!
 
-def largest_digits(n):
+def largest_digit(n):
   pass
 
   

@@ -6,7 +6,7 @@
 
 # Crafted to really give you a hard
 # time. Please please please do not 
-# spend too much time on this. 
+# spend too much time on this!
 
 #     |\_|X|_/|
 #    /         \
@@ -22,5 +22,4 @@
 # ------------------------------------ 
 # INSTRUCTIONS:
 
-def impossible():
-  pass
+
