@@ -19,9 +19,6 @@
 # integer n (base 10) and returns 
 # the largest digit in n.
 
-# Here's the catch though! You can ONLY
-# use a WHILE loop.
-
 # EXAMPLE:
 # largest_digit(12345) => 5
 # largest_digit(11111) => 1
