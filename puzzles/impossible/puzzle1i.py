@@ -42,6 +42,8 @@ def num_unique_words():
     #return number of unique words
     pass
 
+#now try to find the song with the biggest vocabulary. Winner gets bragging rights.
+
 def top_ten_words():
     words = unique_words()
     import operator #sorts words by count
