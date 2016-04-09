@@ -19,7 +19,9 @@
 # HINT:
 # lists have a reverse function!
 # If lst is a list, then lst.reverse() should 
-# do the trick! 
+# do the trick! After calling lst.reverse() 
+# [you don't need to set it to a variable], 
+# you can just return lst!
 
 def reverse_lst(lst):
     pass # 1 line
