@@ -24,9 +24,6 @@ from puzzle2h import palindrome
 from puzzle3h import encrypt
 from puzzle4h import decrypt
 
-sys.path.append('./impossible')
-# from puzzle1i import impossible
-
 # --------------------------
 
 easy_pts   = np.zeros(10)
@@ -165,8 +162,6 @@ hard_pts[3] += test(decrypt('x{\x80\x7f,{r,r\x81z', 12), 'lots of fun')
 hard_pts[3] += test(decrypt('xzujwmjwt', 5), 'superhero')
 hard_pts[3] += test(decrypt('', 124), '')
 
-# ------------- Impossible problem grading. -------------
-
 print '====================================='
 print '||   CODE BOOLA PUZZLE CHALLENGE   ||'
 print '||          SCORING SYSTEM         ||'
@@ -215,12 +210,6 @@ for i in range(len(hard_pts)):
   print 'PUZZLE %i                       (+%d/%d)' % (i+1, hard_pts[i], total_hard_pts[i])
 print '                    SUB-SCORE (%d/%d)' % (np.sum(hard_pts), np.sum(total_hard_pts))
 
-print '-------------------------------------'
-print '|        4) IMPOSSIBLE PUZZLES      |'
-print '-------------------------------------'
-for i in range(len(impos_pts)):
-  print 'PUZZLE %i                       (+%d/%d)' % (i+1, impos_pts[i], total_impos_pts[i])
-print '                    SUB-SCORE (%d/%d)' % (np.sum(impos_pts), np.sum(total_impos_pts))
 print '====================================='
 
 earned_pts = np.sum(easy_pts) + np.sum(medium_pts) + np.sum(hard_pts) + np.sum(impos_pts)
