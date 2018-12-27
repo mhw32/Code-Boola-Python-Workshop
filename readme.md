@@ -1,3 +1,4 @@
+# Exercises in Artificial Intelligence (Python)
 
 This is a hodgepodge of different demos of cool things in computer science. 
 This was made for Code Boola 2016. 
